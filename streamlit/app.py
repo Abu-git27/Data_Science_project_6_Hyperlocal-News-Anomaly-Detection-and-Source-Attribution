@@ -16,7 +16,9 @@ st.set_page_config(
 # ==========================
 @st.cache_data
 def load_data():
-    path = r"C:\Users\HP\Downloads\Education\Data Science\GUvI\projects\Capstone project 6 All Details A to Z\Hyperlocal News Anomaly\notebooks\outputs\processed_news.csv"
+    # Changed path from local Windows absolute path to a GitHub-relative path
+    path = "notebooks/outputs/processed_news.csv" 
+    
     df = pd.read_csv(path)
     df.columns = df.columns.str.strip()
     df["AnomalyFlag"] = df["AnomalyFlag"].astype(str).str.strip().fillna("Normal")
