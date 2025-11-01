@@ -1,0 +1,17 @@
+streamlit
+pandas
+plotly
+numpy
+scikit-learn
+spacy
+geotext
+vaderSentiment
+sentence-transformers
+bertopic
+tqdm
+matplotlib
+seaborn
+Pygments # Needed for ipython if used internally
+openpyxl # If you read .xlsx files
+joblib
+warnings
