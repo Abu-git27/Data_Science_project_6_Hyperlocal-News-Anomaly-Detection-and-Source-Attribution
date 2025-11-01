@@ -14,4 +14,3 @@ seaborn
 Pygments # Needed for ipython if used internally
 openpyxl # If you read .xlsx files
 joblib
-warnings
